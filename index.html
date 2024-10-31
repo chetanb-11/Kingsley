@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <!-- Logo and Header -->
+            <div class="header">
+                <h1 class="logo">KINGSLEY</h1>
+                <p class="tagline">Refined Gentleman's Attire</p>
+            </div>
+
+            <!-- Login Card -->
+            <div class="login-card">
+                <h2>Welcome Back</h2>
+
+                <form id="loginForm">
+                    <!-- Email Input -->
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-icon">
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                            <span class="icon mail-icon"></span>
+                        </div>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <div class="input-icon">
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <span class="icon lock-icon"></span>
+                            <button type="button" class="toggle-password" onclick="togglePasswordVisibility()"></button>
+                        </div>
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="options">
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+
+                <!-- Sign Up Link -->
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="#">Create Account</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
